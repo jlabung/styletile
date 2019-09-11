@@ -1,0 +1,304 @@
+/* change these */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400i&display=swap');
+
+* {
+  box-sizing: border-box;
+
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently, name the variables differently, use the fonts in other ways in the font hierarchy etc. */
+
+
+:root {
+  --bg-color: darkcyan;
+  --color-4:black;
+  --color-5: orange;
+  --link-hover-color: whitesmoke;
+	--button-color: gray;
+
+  --primary-font: 'PT Serif', serif;
+  --secondary-font: 'PT Sans', sans-serif;  ;
+  --main-text-color: #222222;
+
+
+  --white-space: 1rem;
+}
+
+
+/*
+:root {
+  --bg-color: #000;
+  --link-color: #000;
+  --color-4: #000;
+  --color-5: #000;
+
+  --primary-font: 'PT Serif', serif;
+  --secondary-font: 'PT Serif', serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+*/
+
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+}
+
+header,
+main,
+footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: calc(2*var(--white-space));
+}
+
+.full-width {
+  background: var(--bg-color);
+  color: white;
+  width: 100%;
+}
+
+.header-wrapper h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  padding-right: .75em;
+  font-weight: bold;
+  color: white;
+}
+
+.header-wrapper h2 {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  margin: var(--white-space) 0;
+}
+
+.header-wrapper h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.header-wrapper h4 {
+  font-size: 0.8rem;
+}
+
+main {
+  padding: calc(2*var(--white-space));
+}
+
+section {
+  margin-bottom: calc(2*var(--white-space));
+}
+
+.section-heading {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 28px;
+  color: #777;
+  margin: .5rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swatches li {
+  margin-right: 5vw;
+  height: 15vw;
+  width: 20%;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.color-swatch-1 {
+  background-color: var(--bg-color);
+}
+
+.color-swatch-2 {
+  background-color: var(--link-color);
+}
+
+.color-swatch-3 {
+  background-color: var(--link-hover-color);
+}
+
+.color-swatch-4 {
+  background-color: var(--color-4);
+}
+
+.color-swatch-5 {
+  background-color: var(--color-5);
+}
+
+.textures li {
+  height: 30vw;
+  width: 40%;
+  margin-right: 5vw;
+}
+
+.texture-swatch-1 {
+  background: url(../img/800px_COLOURBOX2203672.jpg) top left repeat;
+}
+
+.texture-swatch-2 {
+  background: url(../img/texture02.jpg) top left repeat;
+}
+
+.texture-swatch-1 {
+  background: url(../img/texture03.jpg) top left repeat;
+}
+
+.texture-swatch-3 {
+  background: url(../img/white_paperboard.png) top left repeat;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--button-color);
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.25em/1 "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px -1px 0px #0374a0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+
+.secondary-button {
+  background: var(--button-color);
+	transition: all .2s infinite;
+}
+
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--link-hover-color);
+  /*opacity: 0.5;*/
+}
+
+button:active {
+  background-color: var(--bg-color);
+}
+
+.typography-main {
+  color: var(--main-text-color);
+}
+
+.h1-sample {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.h2-sample {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 2.25rem;
+}
+
+p.typography-sample {
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  font-family: var(--primary-font);
+	font-style: italic;
+  color: var(--color-5);
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+p[class*="font-details-"] {
+  margin-top: .5rem;
+  margin-bottom: calc(2*var(--white-space));
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  color: #6f6f6f;
+}
+
+.adjectives ul {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.adjectives ul {
+  flex-direction: column;
+}
+
+footer {
+  font-style: italic;
+}
+
+@media (min-width:800px) {
+  main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width:900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
+.hide {
+  display: none;
+}
+.modal_background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal_content {
+  background-color: #fefefe;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
