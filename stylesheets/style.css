@@ -17,6 +17,8 @@
   --color-5: orange;
   --link-hover-color: whitesmoke;
 	--button-color: gray;
+	  --link-color: pink;
+
 
   --primary-font: 'PT Serif', serif;
   --secondary-font: 'PT Sans', sans-serif;  ;
@@ -30,7 +32,6 @@
 /*
 :root {
   --bg-color: #000;
-  --link-color: #000;
   --color-4: #000;
   --color-5: #000;
 
